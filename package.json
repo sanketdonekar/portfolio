@@ -1,0 +1,29 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "This is my first portfolio website",
+  "main": "index.html",
+  "dependencies": {
+    "jquery": "^3.5.0",
+    "popper.js": "^1.16.1",
+    "bootstrap": "^4.5.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "scripts": {
+    "start":"npm run lite",
+    "lite":"lite-server", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanketdonekar/portfolio.git"
+  },
+  "author": "Sanket Donekar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanketdonekar/portfolio/issues"
+  },
+  "homepage": "https://github.com/sanketdonekar/portfolio#readme"
+}
