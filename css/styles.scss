@@ -1,0 +1,106 @@
+.row-header {
+  margin: 0px auto;
+  padding: 0px auto;
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 100px;
+}
+
+.footer {
+  background-color: #D1c4e9;
+  margin: 0px auto;
+  padding: 20px 0px 20px 0px;
+}
+
+.jumbotron {
+  padding: 70px 30px 70px 30px;
+  margin: 0px;
+  background: #e7e7e7;
+  color: #383839;
+}
+
+.address {
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f;
+}
+
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+  font-family: "Work Sans Light Roman";
+  color: #e7e7e7;
+  background-image: url(/img/bg.png);
+  min-width: 100%;
+  height: auto;
+  background-size: 100% 100%;
+  display: block;
+}
+
+.navbar {
+  font-family: "Open Sans Regular";
+  border-bottom: 2px solid #e7e7e7;
+  background: #383839;
+}
+
+.nav-item {
+  font-family: "Open Sans Regular";
+  font-size: 24px;
+  padding: 10px;
+}
+
+.navbar-dark {
+  font-size: larger;
+  height: 10%;
+}
+
+.navbar-collapse {
+  margin: 0;
+  text-align: end;
+}
+
+.footer {
+  background: #383838;
+  color: #e7e7e7;
+  font-family: "Open Sans Regular";
+  text-align: center;
+  align-items: center;
+  
+}
+.footer .icons .fa {
+  color: #e7e7e7;
+  padding: 5px;
+  align-items: center;
+}
+
+.Contact {
+  align-items: center;
+}
+
+.work {
+  font-size: 14px;
+  font-family: "Open Sans ExtraBold";
+  letter-spacing: 15px;
+  padding-top: 150px;
+}
+
+.intro {
+  font-family: "Work Sans ExtraLight";
+  font-size: 64px;
+}
+
+.line {
+  width: 197px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.logo {
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -4,17 +4,30 @@
   "description": "This is my first portfolio website",
   "main": "index.html",
   "dependencies": {
-    "jquery": "^3.5.0",
-    "popper.js": "^1.16.1",
-    "bootstrap": "^4.5.0"
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "@popperjs/core": "^2.4.0",
+    "bootstrap": "^4.5.0",
+    "bootstrap-social": "^5.1.1",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "cssmin": "^0.4.3",
+    "lite-server": "^2.5.4",
+    "rimraf": "^2.6.2",
+    "sass": "^1.26.8",
+    "usemin-cli": "^0.6.0"
   },
   "scripts": {
-    "start":"npm run lite",
-    "lite":"lite-server", 
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run lite",
+    "lite": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass css/styles.scss css/styles.css",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* --out-dir dist/img ",
+    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
   },
   "repository": {
     "type": "git",
