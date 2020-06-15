@@ -105,7 +105,7 @@ body {
 
 .cardbody {
   margin: 0;
-  padding: 0;
+  padding: 20px;
   width: 100%;
   height: auto;
   background: #333;
@@ -116,21 +116,9 @@ body {
   background-color: #383838;
 }
 
-.cardbody2 {
-  margin: 0;
-  padding: 50px;
-  min-width: 100%;
-  height: auto;
-  background: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Open Sans Regular";
-  background-color: #383838;
-}
-
 .cardcontainer {
   width: 1000px;
+  height: auto;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -263,11 +251,13 @@ i {
   justify-content: center;
   background: #383838;
 }
+
 .linkbody ul {
   position: relative;
   display: flex;
   transform-style: preserve-3d;
 }
+
 .linkbody ul li {
   position: relative;
   list-style: none;
@@ -275,6 +265,7 @@ i {
   height: 60px;
   margin: 0px 20px;
 }
+
 .linkbody ul li:before {
   content: "";
   position: absolute;
@@ -286,6 +277,7 @@ i {
   trnasform-origin: top;
   transform: skewX(-41deg);
 }
+
 .linkbody ul li:after {
   content: "";
   position: absolute;
@@ -297,6 +289,7 @@ i {
   trnasform-origin: right;
   transform: skewY(-49deg);
 }
+
 .linkbody ul li span {
   position: absolute;
   top: 0;
@@ -311,43 +304,55 @@ i {
   font-size: 30px !important;
   transition: 1.5s ease-out;
 }
+
 .linkbody ul li:hover span {
   z-index: 1000;
   transition: 0.3s;
   color: #fff;
   box-shadw: -1px 1px 1px rgba(0, 0, 0, 0.5);
 }
+
 .linkbody ul li:hover span:nth-child(5) {
   transform: translate(40px, -40px);
   opacity: 1;
 }
+
 .linkbody ul li:hover span:nth-child(4) {
   transform: translate(30px, -30px);
   opacity: 0.8;
 }
+
 .linkbody ul li:hover span:nth-child(3) {
   transform: translate(20px, -20px);
   opacity: 0.6;
 }
+
 .linkbody ul li:hover span:nth-child(2) {
   transform: translate(10px, -10px);
   opacity: 0.4;
 }
+
 .linkbody ul li:hover span:nth-child(1) {
   transform: translate(0px, 0px);
   opacity: 0.2;
 }
+
 .linkbody ul li:nth-child(1):hover span {
   background: #929292 !important;
 }
+
 .linkbody ul li:nth-child(2):hover span {
   background: #929292 !important;
 }
+
 .linkbody ul li:nth-child(3):hover span {
   background: #929292 !important;
 }
+
 .linkbody ul li:nth-child(4):hover span {
   background: #929292 !important;
 }
+
+/*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */
