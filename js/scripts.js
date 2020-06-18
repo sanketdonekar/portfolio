@@ -4,3 +4,5 @@ $('.carousel').carousel({
 $('.btn-next').click(function () {
     $('.carousel').carousel('next');
 });
+
+

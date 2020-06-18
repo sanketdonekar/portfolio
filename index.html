@@ -32,9 +32,9 @@
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active"><a href="" class="nav-link">about</a>
                             </li>
-                            <li class="nav-item"><a href="" class="nav-link">skills</a></li>
-                            <li class="nav-item"><a href="" class="nav-link">work</a></li>
-                            <li class="nav-item"><a href="" class="nav-link">contact</a></li>
+                            <li class="nav-item"><a href="#skills" class="nav-link">skills</a></li>
+                            <li class="nav-item"><a href="#work" class="nav-link">work</a></li>
+                            <li class="nav-item"><a href="#contact" class="nav-link">contact</a></li>
                     </div>
                     </ul>
                 </div>
@@ -61,7 +61,7 @@
 
 
         <!-- Card Hover -->
-        <div class="row-content">
+        <div class="row-content" id="skills">
             <div class="cardbody row col-sm">
                 <div class="cardcontainer">
                     <div class="card">
@@ -177,7 +177,7 @@
 
 
         <!--Carousel try-->
-        <div class="container row-content">
+        <div class="container row-content" id="work">
             <div class="carouselcard">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -218,31 +218,19 @@
                                     browse through various categories like latest trends, new collection, offers etc.
                                 </div>
                             </div>
-                            <!--<button class="btn btn-next">Next</button>-->
                         </div>
                         <div class="carousel-item">
                             <div class="row h-100 align-items-center">
                                 <div class="col-lg-6 d-flex justify-content-center align-items-center title">
-                                    <h4>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales,
-                                        metu
-                                    </h4>
+                                    <img src="/img/restaurant.png" alt="">
                                 </div>
                                 <div class="col-lg-6">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales, metus
-                                    ac
-                                    fringilla suscipit, nulla massa mollis leo, ut maximus odio ex sit amet elit. Nullam
-                                    varius
-                                    ante orci, quis rhoncus velit tempor sit amet. Nulla lacinia, sem sed euismod
-                                    dignissim,
-                                    ante nibh iaculis
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp" placeholder="Enter email">
-                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email
-                                            with anyone else.</small>
-                                    </div>
+                                    <h4 style="color: #ff0057;">
+                                        Restaurant Web-App
+                                    </h4>
+                                    A responsive web application for a restaurant. Customers can book a table as per
+                                    need with choice of number of persons.
+                                    Also look through the restaurant's new dishes and offers.
                                 </div>
                             </div>
 
@@ -290,7 +278,7 @@
 
 
 
-        <footer class="footer">
+        <footer class="footer" id="contact">
             <div class="container">
                 <div class="">
 
@@ -432,7 +420,7 @@
         <span class="fal fa-copyright fa-sm"></span> 2020 Indecent Solutions <br> All rights reserved
     </div>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_mor.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
