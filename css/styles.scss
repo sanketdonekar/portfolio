@@ -63,6 +63,9 @@ body {
   letter-spacing: 15px;
   padding-top: 150px;
 }
+  .info{
+    height:100vh;
+  }
 
 .intro {
   font-family: "Work Sans ExtraLight";
@@ -80,7 +83,7 @@ body {
   padding: 20px;
   width: 100%;
   height: auto;
-  display: flex;
+  
   justify-content: center;
   align-items: center;
   font-family: "Open Sans ExtraBold";
@@ -222,8 +225,9 @@ i {
   padding-top: 50px;
   display: flex;
   justify-content: center;
-  background-color: #383838;
-  border-radius: 10px;
+  
+  
+
 }
 
 .linkbody ul {
@@ -333,18 +337,13 @@ i {
 
 /*Footer Section*/
 .footer {
-  background-color: #D1c4e9;
-  margin: 0px auto;
-  padding: 20px 0px 20px 0px;
-}
-
-.footer {
   background-color: rgba(56, 56, 56, 0.1);
   color: #e7e7e7;
   font-family: "Open Sans Regular";
   text-align: center;
   align-items: center;
   font-size: 24px;
+  padding-top: 20px;
 }
 
 .footer .icons .fa {
@@ -354,22 +353,35 @@ i {
 }
 
 /*Contact us form*/
+
+.contactcard{
+  border-radius: 20px;
+  height: auto;
+  width: 100%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border: none;
+  align-items: center;
+  padding: 20px;
+  font-family: "Open Sans Regular";
+}
+
+
 .form {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
   justify-content: center;
-  padding: 50px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  
 }
 
 .screen {
   position: relative;
-  background: #3e3e3e;
-  border-radius: 15px;
-  background-color: #383838;
-  width: 700px;
+  
+ 
+ 
+  width: 100%;
   justify-content: center;
-  background-color: rgba(56, 56, 56, 0.8);
+  
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
 }
 
@@ -378,11 +390,9 @@ i {
   display: block;
   position: absolute;
   top: 0;
-  left: 20px;
-  right: 20px;
+ 
   bottom: 0;
-  border-radius: 15px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+
   z-index: -1;
 }
 
@@ -397,6 +407,8 @@ i {
 
 .screen-body {
   display: flex;
+
+ 
 }
 
 .screen-body-item {
@@ -404,7 +416,10 @@ i {
   font-size: 16px;
   flex: 1;
   padding: 50px;
-  background-color: rgba(56, 56, 56, 0.8);
+  background-color: rgba(56, 56, 56, 0.25);
+  height: auto;
+
+  
 }
 
 .app-title {
@@ -413,6 +428,8 @@ i {
   position: relative;
   color: #ea1d6f;
   font-size: 24px;
+  font-family: "Open Sans SemiBold";
+  
 }
 
 .app-form-group {
@@ -456,6 +473,8 @@ i {
   font-size: 16px;
   cursor: pointer;
   outline: none;
+  font-family: "Open Sans SemiBold";
+
 }
 
 .app-form-button:hover {
@@ -465,11 +484,11 @@ i {
 @media screen and (max-width: 520px) {
   .screen-body {
     flex-direction: column;
-    background-color: rgba(56, 56, 56, 0.1);
+    background-color: rgba(56, 56, 56, 0.25);
   }
 
   .screen-body-item.left {
-    margin-bottom: 30px;
+    border-bottom: 20px;
   }
 
   .app-title {
@@ -497,14 +516,171 @@ i {
     font-family: "Open Sans Regular";
     font-size: 16px;
     padding: 0;
+    border-bottom: 20px;
   }
 }
 /*Copyright Section*/
 .copyright {
   text-align: center;
-  align-items: center;
-  font-size: 16px;
-  font-family: "Open Sans Regular";
+  font-family: "Open Sans SemiBold";
   color: #e7e7e7;
+  justify-content: center;
+  
+  padding: 20px;
+  font-size: 12px;
+}
+  
+
+
+
+
+/*-----Carousel------*/
+
+.carousel, .carousel-inner, .carousel-item{
+  height: 100%
 }
 
+.carousel h1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+}
+
+.carouselcard{
+  border-radius: 20px;
+  height: 500px;
+  width: 100%;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border: none;
+  align-items: center;
+  padding: 20px;
+  font-family: "Open Sans Regular";
+
+}
+
+.carousel-item{
+  z-index: 2;
+  /*padding: 10px 25px;*/
+}
+.carousel-item > .row{
+  margin: 0;
+}
+.title{
+  color: #fff;
+  text-align: center;
+}
+.bgTitle{
+    background-color: #383838;
+    position: absolute;
+    z-index: 1;
+}
+
+.title h3{
+  text-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+}
+
+.btn-next{
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 100px;
+  border-radius: 20px;
+  background-color: #f8f8f8;
+  color: #383838;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  z-index: 3;
+  
+}
+
+input{
+  background-color: transparent !important;
+}
+
+/*-- vertical bootstrap slider --*/
+.carousel .carousel-item-next.carousel-item-left,
+.carousel .carousel-item-prev.carousel-item-right {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.carousel .carousel-item-next,
+.carousel .active.carousel-item-right {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100% 0);
+}
+
+.carousel .carousel-item-prev,
+.carousel .active.carousel-item-left {
+-webkit-transform: translate3d(0,-100%, 0);
+        transform: translate3d(0,-100%, 0);
+}
+
+/*-- vertical carousel indicators --*/
+.carousel-indicators{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 40px;
+    right: 0px;
+    left: auto;
+    width :auto;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.carousel-indicators li{
+    display: block;
+    margin-bottom: 0px;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: #b2b2b2;
+    transition: all ease 0.6s;
+}
+.carousel-indicators li.active{
+    background: #e7e7e7;
+    width: 10px;
+    border-radius: 25px;
+}
+/* Media Querys */
+/* Small devices (landscape phones, 576px and up)*/ 
+@media (min-width: 576px) {
+  .bgTitle{
+    height: 30%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    top: 0;
+  }
+  .content{
+    padding: 15px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  .bgTitle{
+    height: 100%;
+    width: 50%;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
