@@ -1,7 +1,7 @@
 
-$('carousel')({ interval: 2000 });
+
 $('.carousel').carousel({
-    interval: 0
+    interval: 2000
 });
 $('.btn-next').click(function () {
     $('.carousel').carousel('next');
